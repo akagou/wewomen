@@ -103,7 +103,7 @@ function Nav({ page, setPage }) {
             {link("About", PAGES.ABOUT)}
             {link("Contact", PAGES.CONTACT)}
             <button
-              onClick={() => setPage(PAGES.CONTACT, "Free session — Understanding Your Body After 35")}
+              onClick={() => setPage(PAGES.FOR_YOU)}
               style={{
                 background: "#3D9B8F", color: "#fff", border: "none",
                 borderRadius: 100, padding: "10px 22px", cursor: "pointer",
@@ -143,7 +143,7 @@ function Nav({ page, setPage }) {
             {link("About", PAGES.ABOUT)}
             {link("Contact", PAGES.CONTACT)}
             <button
-              onClick={() => setPage(PAGES.CONTACT, "Free session — Understanding Your Body After 35")}
+              onClick={() => setPage(PAGES.FOR_YOU)}
               style={{
                 background: "#3D9B8F", color: "#fff", border: "none",
                 borderRadius: 100, padding: "12px 22px", cursor: "pointer",
@@ -570,7 +570,7 @@ function ForYouPage({ setPage }) {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
                 <button
-                  onClick={() => setPage(PAGES.CONTACT, "Free session — Understanding Your Body After 35")}
+                  onClick={() => setPage(PAGES.FOR_YOU)}
                   style={{
                     background: "#fff", color: "#3D9B8F", border: "none",
                     borderRadius: 100, padding: "14px 28px", cursor: "pointer",
