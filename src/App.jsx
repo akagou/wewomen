@@ -62,7 +62,7 @@ function Nav({ page, setPage }) {
       onClick={() => setPage(target)}
       style={{
         background: "none", border: "none", cursor: "pointer",
-        fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+        fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
         letterSpacing: "0.04em", textTransform: "uppercase",
         color: page === target ? "#3D9B8F" : "#3a3a3a",
         fontWeight: page === target ? 600 : 400,
@@ -89,7 +89,7 @@ function Nav({ page, setPage }) {
             display: "flex", alignItems: "center", gap: 8,
           }}>
             <span style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.5rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.5rem",
               fontWeight: 600, color: "#3D9B8F", letterSpacing: "-0.02em",
             }}>WeWomen</span>
           </button>
@@ -107,7 +107,7 @@ function Nav({ page, setPage }) {
               style={{
                 background: "#3D9B8F", color: "#fff", border: "none",
                 borderRadius: 100, padding: "10px 22px", cursor: "pointer",
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                 fontWeight: 600, letterSpacing: "0.03em",
                 transition: "transform 0.2s, box-shadow 0.2s",
               }}
@@ -147,7 +147,7 @@ function Nav({ page, setPage }) {
               style={{
                 background: "#3D9B8F", color: "#fff", border: "none",
                 borderRadius: 100, padding: "12px 22px", cursor: "pointer",
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                 fontWeight: 600, marginTop: 4,
               }}
             >Free Session — It's Free</button>
@@ -175,22 +175,22 @@ function Footer({ setPage }) {
         }}>
           <div>
             <span style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.8rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.8rem",
               fontWeight: 600, color: "#7ECBC1",
             }}>WeWomen</span>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
               lineHeight: 1.7, color: "#96A5A8", marginTop: 16,
               fontStyle: "italic",
             }}>Your Health, Finally Understood.</p>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Navigate</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Navigate</span>
             {[["For You", PAGES.FOR_YOU], ["Free Session", PAGES.FREE_SESSION], ["Corporate", PAGES.CORPORATE], ["About", PAGES.ABOUT]].map(([l, p]) => (
               <button key={p} onClick={() => setPage(p)} style={{
                 background: "none", border: "none", color: "#B0BEC2", cursor: "pointer",
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", textAlign: "left",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", textAlign: "left",
                 padding: 0, transition: "color 0.2s",
               }}
               onMouseEnter={e => e.target.style.color = "#fff"}
@@ -200,26 +200,26 @@ function Footer({ setPage }) {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Get in Touch</span>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>hello@wewomen.fit</span>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>+31 6 13 46 63 79</span>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>IJburg, Amsterdam</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Get in Touch</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>hello@wewomen.fit</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>+31 6 13 46 63 79</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>IJburg, Amsterdam</span>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Stay in the loop</span>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem", color: "#96A5A8", lineHeight: 1.6 }}>New programmes, upcoming sessions, and the occasional piece of advice worth reading.</p>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Stay in the loop</span>
+            <p style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem", color: "#96A5A8", lineHeight: 1.6 }}>New programmes, upcoming sessions, and the occasional piece of advice worth reading.</p>
             <div style={{ display: "flex", gap: 8, marginTop: 4 }}>
               <input placeholder="Your email" style={{
                 flex: 1, padding: "10px 14px", border: "1px solid #3A4E4B",
                 borderRadius: 8, background: "rgba(255,255,255,0.05)",
-                color: "#E0E8EA", fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                color: "#E0E8EA", fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                 outline: "none",
               }} />
               <button style={{
                 background: "#3D9B8F", color: "#fff", border: "none",
                 borderRadius: 8, padding: "10px 16px", cursor: "pointer",
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem", fontWeight: 600,
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem", fontWeight: 600,
               }}>Join</button>
             </div>
           </div>
@@ -230,8 +230,8 @@ function Footer({ setPage }) {
           display: "flex", justifyContent: "space-between", alignItems: "center",
           flexWrap: "wrap", gap: 12,
         }}>
-          <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem", color: "#5E6B6E" }}>© 2026 WeWomen. All rights reserved.</span>
-          <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem", color: "#5E6B6E" }}>For Women, By Women</span>
+          <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem", color: "#5E6B6E" }}>© 2026 WeWomen. All rights reserved.</span>
+          <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem", color: "#5E6B6E" }}>For Women, By Women</span>
         </div>
       </div>
     </footer>
@@ -241,7 +241,7 @@ function Footer({ setPage }) {
 function Btn({ children, variant = "primary", onClick, style: s = {} }) {
   const base = {
     border: "none", borderRadius: 100, cursor: "pointer",
-    fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
     fontWeight: 600, letterSpacing: "0.02em",
     transition: "all 0.25s ease", display: "inline-flex",
     alignItems: "center", gap: 8,
@@ -264,7 +264,7 @@ function Btn({ children, variant = "primary", onClick, style: s = {} }) {
 function SectionLabel({ children }) {
   return (
     <span style={{
-      fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem",
+      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.72rem",
       textTransform: "uppercase", letterSpacing: "0.16em",
       color: "#3D9B8F", fontWeight: 600,
     }}>{children}</span>
@@ -302,7 +302,7 @@ function HomePage({ setPage }) {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(2.4rem, 5.5vw, 4rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(2.4rem, 5.5vw, 4rem)",
               fontWeight: 500, lineHeight: 1.15, color: "#2C2C2C",
               marginTop: 20, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
@@ -312,7 +312,7 @@ function HomePage({ setPage }) {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.15rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.15rem",
               lineHeight: 1.7, color: "#5E6B6E", maxWidth: 560,
               margin: "0 auto 40px",
             }}>
@@ -335,14 +335,14 @@ function HomePage({ setPage }) {
         <div style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
           <FadeIn>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
               fontWeight: 400, lineHeight: 1.3, color: "#2C2C2C",
               marginBottom: 24,
             }}>Let's be honest — something shifted.</h2>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
               lineHeight: 1.8, color: "#4D5B5E",
             }}>
               The energy vanished. The sleep went sideways. Your body stopped playing by the old rules. And nobody told you why — or that hormones, stress, training and nutrition are all connected. Consider this your missing manual.
@@ -362,7 +362,7 @@ function HomePage({ setPage }) {
           <FadeIn>
             <SectionLabel>How we help</SectionLabel>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
               fontWeight: 500, color: "#2C2C2C", marginTop: 12, marginBottom: 56,
             }}>Two ways to work with us</h2>
           </FadeIn>
@@ -389,17 +389,17 @@ function HomePage({ setPage }) {
                   fontSize: "1.6rem", marginBottom: 24,
                 }}>✦</div>
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.4rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 12,
                 }}>For You</h3>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                   lineHeight: 1.7, color: "#5E6B6E", marginBottom: 24,
                 }}>
                   Live sessions, online programmes, in-person classes in Amsterdam, and one-to-one coaching. For women who want to understand their bodies and take action.
                 </p>
                 <span style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                   color: "#3D9B8F", fontWeight: 600,
                 }}>Explore options →</span>
               </div>
@@ -423,17 +423,17 @@ function HomePage({ setPage }) {
                   fontSize: "1.6rem", marginBottom: 24,
                 }}>◈</div>
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.4rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 12,
                 }}>For Organisations</h3>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                   lineHeight: 1.7, color: "#5E6B6E", marginBottom: 24,
                 }}>
                   Structured workplace programmes that support women through perimenopause and beyond. Pilots, cohorts, and long-term partnerships available.
                 </p>
                 <span style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                   color: "#E07B68", fontWeight: 600,
                 }}>Learn more →</span>
               </div>
@@ -450,14 +450,14 @@ function HomePage({ setPage }) {
           </FadeIn>
           <FadeIn delay={0.1}>
             <blockquote style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(1.3rem, 3vw, 1.8rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(1.3rem, 3vw, 1.8rem)",
               fontWeight: 400, fontStyle: "italic", lineHeight: 1.5,
               color: "#fff", margin: "32px 0 20px", padding: 0, border: "none",
             }}>
               "You've opened my mind — and my mindset. You two have given us a huge gift."
             </blockquote>
             <span style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
               color: "rgba(255,255,255,0.7)",
             }}>— Workshop participant</span>
           </FadeIn>
@@ -466,14 +466,14 @@ function HomePage({ setPage }) {
 
           <FadeIn delay={0.2}>
             <blockquote style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(1.1rem, 2.5vw, 1.4rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(1.1rem, 2.5vw, 1.4rem)",
               fontWeight: 400, fontStyle: "italic", lineHeight: 1.6,
               color: "rgba(255,255,255,0.9)", margin: "0 0 20px", padding: 0, border: "none",
             }}>
               "Sarah and Stef explained everything clearly and gave us practical tools to actually do something about it. For too long, women's health has taken a backseat. Bravo to WeWomen."
             </blockquote>
             <span style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
               color: "rgba(255,255,255,0.7)",
             }}>— Workshop participant</span>
           </FadeIn>
@@ -484,11 +484,11 @@ function HomePage({ setPage }) {
       <section style={{ padding: "100px 24px", textAlign: "center" }}>
         <FadeIn>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
+            fontFamily: "'Mercado', serif", fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
             fontWeight: 400, color: "#2C2C2C", marginBottom: 16,
           }}>Not sure where to start?</h2>
           <p style={{
-            fontFamily: "'DM Sans', sans-serif", fontSize: "1rem",
+            fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
             color: "#5E6B6E", marginBottom: 32, maxWidth: 460, margin: "0 auto 32px",
           }}>
             Join our free 45-minute live session and see how we work — no commitment needed.
@@ -508,7 +508,7 @@ function ForYouPage({ setPage }) {
   const tag = (label, color = "#3D9B8F") => (
     <span style={{
       display: "inline-block", padding: "3px 10px", borderRadius: 100,
-      fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem",
+      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
       fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
       color, background: color === "#fff" ? "rgba(255,255,255,0.2)" : `${color}11`,
     }}>{label}</span>
@@ -522,7 +522,7 @@ function ForYouPage({ setPage }) {
           <FadeIn>
             <SectionLabel>For You</SectionLabel>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
               fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
               marginTop: 16, marginBottom: 20,
             }}>
@@ -531,7 +531,7 @@ function ForYouPage({ setPage }) {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
               lineHeight: 1.7, color: "#5E6B6E",
             }}>
               Whether changes have started or not, understanding your body after 35 gives you the head start most women wish they'd had.
@@ -559,11 +559,11 @@ function ForYouPage({ setPage }) {
                 {tag("Free", "#fff")}
               </div>
               <h2 style={{
-                fontFamily: "'Fraunces', serif", fontSize: "1.6rem",
+                fontFamily: "'Mercado', serif", fontSize: "1.6rem",
                 fontWeight: 500, marginBottom: 10,
               }}>Understanding Your Body After 35</h2>
               <p style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                 lineHeight: 1.7, opacity: 0.9, maxWidth: 480, marginBottom: 24,
               }}>
                 A free 45-minute live session. Science-backed, practical, open to any woman 35+.
@@ -574,14 +574,14 @@ function ForYouPage({ setPage }) {
                   style={{
                     background: "#fff", color: "#3D9B8F", border: "none",
                     borderRadius: 100, padding: "14px 28px", cursor: "pointer",
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                     fontWeight: 600, transition: "transform 0.2s",
                   }}
                   onMouseEnter={e => e.target.style.transform = "scale(1.04)"}
                   onMouseLeave={e => e.target.style.transform = "scale(1)"}
                 >Reserve my spot →</button>
                 <span style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                   opacity: 0.7,
                 }}>Wed April 8 · 19:30 CET</span>
               </div>
@@ -596,7 +596,7 @@ function ForYouPage({ setPage }) {
           <FadeIn>
             <SectionLabel>Online Programmes</SectionLabel>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.4rem",
               fontWeight: 500, color: "#2C2C2C", marginTop: 10, marginBottom: 28,
             }}>Learn at your own pace</h2>
           </FadeIn>
@@ -612,17 +612,17 @@ function ForYouPage({ setPage }) {
                   {tag("Live programme")}
                   <span style={{
                     display: "inline-block", padding: "3px 10px", borderRadius: 100,
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
                     fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
                     color: "#fff", background: "#E07B68",
                   }}>Now open</span>
                 </div>
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.4rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                 }}>Your Body After 35</h3>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                   lineHeight: 1.7, color: "#4D5B5E", marginBottom: 20,
                 }}>
                   4 live Wednesday evening sessions with Sarah and Stef. One topic per week — so you leave with the full picture.
@@ -640,12 +640,12 @@ function ForYouPage({ setPage }) {
                       border: "1px solid rgba(61,155,143,0.08)",
                     }}>
                       <span style={{
-                        fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem",
+                        fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
                         textTransform: "uppercase", letterSpacing: "0.1em",
                         color: "#3D9B8F", fontWeight: 600,
                       }}>{w}</span>
                       <p style={{
-                        fontFamily: "'DM Sans', sans-serif", fontSize: "0.84rem",
+                        fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.84rem",
                         color: "#3a3a3a", marginTop: 3, lineHeight: 1.4,
                       }}>{t}</p>
                     </div>
@@ -657,11 +657,11 @@ function ForYouPage({ setPage }) {
                   flexWrap: "wrap",
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.4rem",
                     fontWeight: 500, color: "#2C2C2C",
                   }}>€129</span>
                   <span style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                     color: "#E07B68", fontWeight: 600,
                     background: "rgba(224,123,104,0.1)", padding: "5px 12px",
                     borderRadius: 100,
@@ -682,11 +682,11 @@ function ForYouPage({ setPage }) {
                 }}>
                   <div style={{ marginBottom: 12 }}>{tag("Recorded workshop")}</div>
                   <h4 style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.05rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.05rem",
                     fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                   }}>Know Your Floor</h4>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                     color: "#5E6B6E", lineHeight: 1.6, flex: 1, marginBottom: 16,
                   }}>Everything women are never taught about pelvic floor health. 90 minutes, watch anytime, as many times as you like.</p>
                   <div style={{
@@ -694,11 +694,11 @@ function ForYouPage({ setPage }) {
                     display: "flex", justifyContent: "space-between", alignItems: "center",
                   }}>
                     <span style={{
-                      fontFamily: "'Fraunces', serif", fontSize: "1.1rem",
+                      fontFamily: "'Mercado', serif", fontSize: "1.1rem",
                       fontWeight: 500, color: "#2C2C2C",
                     }}>€39</span>
                     <span onClick={() => setPage(PAGES.CONTACT, "Know Your Floor — Pelvic health webinar")} style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
                       color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
                     }}>Get access →</span>
                   </div>
@@ -713,11 +713,11 @@ function ForYouPage({ setPage }) {
                 }}>
                   <div style={{ marginBottom: 12 }}>{tag("On demand")}</div>
                   <h4 style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.05rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.05rem",
                     fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                   }}>Stronger Together Workout Pack</h4>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                     color: "#5E6B6E", lineHeight: 1.6, flex: 1, marginBottom: 16,
                   }}>Strength, core, mobility and cardio workouts from home. Designed for women, all levels welcome.</p>
                   <div style={{
@@ -725,11 +725,11 @@ function ForYouPage({ setPage }) {
                     display: "flex", justifyContent: "space-between", alignItems: "center",
                   }}>
                     <span style={{
-                      fontFamily: "'Fraunces', serif", fontSize: "1.1rem",
+                      fontFamily: "'Mercado', serif", fontSize: "1.1rem",
                       fontWeight: 500, color: "#2C2C2C",
                     }}>€27</span>
                     <span onClick={() => setPage(PAGES.CONTACT, "Stronger Together Workout Pack")} style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
                       color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
                     }}>Get the pack →</span>
                   </div>
@@ -746,7 +746,7 @@ function ForYouPage({ setPage }) {
           <FadeIn>
             <SectionLabel>In Amsterdam</SectionLabel>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.4rem",
               fontWeight: 500, color: "#2C2C2C", marginTop: 10, marginBottom: 28,
             }}>Train with us in person</h2>
           </FadeIn>
@@ -760,15 +760,15 @@ function ForYouPage({ setPage }) {
               }}>
                 <div style={{ marginBottom: 12 }}>{tag("Group class")}</div>
                 <h4 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.05rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.05rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                 }}>Stronger Together</h4>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                   color: "#5E6B6E", lineHeight: 1.6, flex: 1, marginBottom: 16,
                 }}>Energising group workout that builds strength, confidence and wellbeing. All levels.</p>
                 <div style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                   color: "#4D5B5E", marginBottom: 16, lineHeight: 1.6,
                 }}>
                   <span style={{ color: "#8A9599" }}>📍</span> Naar Zee, IJburg · <span style={{ color: "#8A9599" }}>🗓</span> Mon 18:30
@@ -778,11 +778,11 @@ function ForYouPage({ setPage }) {
                   display: "flex", justifyContent: "space-between", alignItems: "center",
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.1rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.1rem",
                     fontWeight: 500, color: "#2C2C2C",
-                  }}>€15<span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", color: "#8A9599", fontWeight: 400 }}>/class</span></span>
+                  }}>€15<span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", color: "#8A9599", fontWeight: 400 }}>/class</span></span>
                   <span onClick={() => setPage(PAGES.CONTACT, "Group classes — IJburg, Amsterdam")} style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
                     color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
                   }}>Sign up →</span>
                 </div>
@@ -797,15 +797,15 @@ function ForYouPage({ setPage }) {
               }}>
                 <div style={{ marginBottom: 12 }}>{tag("Group class")}</div>
                 <h4 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.05rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.05rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                 }}>Power Up</h4>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                   color: "#5E6B6E", lineHeight: 1.6, flex: 1, marginBottom: 16,
                 }}>Balance, agility, speed, mobility and core. Challenging, effective, and fun.</p>
                 <div style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                   color: "#4D5B5E", marginBottom: 16, lineHeight: 1.6,
                 }}>
                   <span style={{ color: "#8A9599" }}>📍</span> Naar Zee, IJburg · <span style={{ color: "#8A9599" }}>🗓</span> Wed 18:30
@@ -815,11 +815,11 @@ function ForYouPage({ setPage }) {
                   display: "flex", justifyContent: "space-between", alignItems: "center",
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.1rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.1rem",
                     fontWeight: 500, color: "#2C2C2C",
-                  }}>€15<span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", color: "#8A9599", fontWeight: 400 }}>/class</span></span>
+                  }}>€15<span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", color: "#8A9599", fontWeight: 400 }}>/class</span></span>
                   <span onClick={() => setPage(PAGES.CONTACT, "Group classes — IJburg, Amsterdam")} style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
                     color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
                   }}>Sign up →</span>
                 </div>
@@ -835,7 +835,7 @@ function ForYouPage({ setPage }) {
           <FadeIn>
             <SectionLabel>Personal Coaching</SectionLabel>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.4rem",
               fontWeight: 500, color: "#2C2C2C", marginTop: 10, marginBottom: 28,
             }}>One-to-one support</h2>
           </FadeIn>
@@ -854,21 +854,21 @@ function ForYouPage({ setPage }) {
                 <div key={i}>
                   <span style={{
                     display: "inline-block", padding: "3px 10px", borderRadius: 100,
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
                     fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
                     color: "#E07B68", background: "rgba(224,123,104,0.08)",
                     marginBottom: 12,
                   }}>{item.tag}</span>
                   <h4 style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.05rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.05rem",
                     fontWeight: 500, color: "#2C2C2C", marginBottom: 2,
                   }}>{item.title}</h4>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
                     color: "#8A9599", marginBottom: 8,
                   }}>{item.who}</p>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                     color: "#5E6B6E", lineHeight: 1.6,
                   }}>{item.desc}</p>
                 </div>
@@ -882,7 +882,7 @@ function ForYouPage({ setPage }) {
             }}>
               <Btn variant="soft" onClick={() => setPage(PAGES.CONTACT, "Personal coaching")} style={{ padding: "12px 24px", fontSize: "0.85rem" }}>Book a free discovery call →</Btn>
               <span style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                 color: "#5E6B6E",
               }}>From €95/session · In person or online</span>
             </div>
@@ -915,20 +915,20 @@ function FreeSessionPage({ setPage }) {
             <span style={{
               display: "inline-block", background: "#3D9B8F", color: "#fff",
               padding: "6px 18px", borderRadius: 100, marginBottom: 24,
-              fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem",
               fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em",
             }}>Free · 45 Minutes · Online</span>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
               fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
               marginBottom: 12,
             }}>Understanding Your Body After 35</h1>
           </FadeIn>
           <FadeIn delay={0.15}>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.1rem",
               lineHeight: 1.7, color: "#5E6B6E", fontStyle: "italic",
               marginBottom: 40,
             }}>
@@ -945,7 +945,7 @@ function FreeSessionPage({ setPage }) {
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <FadeIn>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
               lineHeight: 1.8, color: "#4D5B5E", textAlign: "center",
               marginBottom: 56,
             }}>
@@ -968,12 +968,12 @@ function FreeSessionPage({ setPage }) {
                 }}>
                   <div style={{ fontSize: "1.5rem", marginBottom: 10 }}>{d.icon}</div>
                   <span style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.72rem",
                     textTransform: "uppercase", letterSpacing: "0.12em",
                     color: "#8A9599",
                   }}>{d.label}</span>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "1rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
                     fontWeight: 600, color: "#2C2C2C", marginTop: 4,
                   }}>{d.value}</p>
                 </div>
@@ -984,7 +984,7 @@ function FreeSessionPage({ setPage }) {
           {/* What you'll learn */}
           <FadeIn>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.5rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.5rem",
               fontWeight: 500, color: "#2C2C2C", marginBottom: 28,
               textAlign: "center",
             }}>What we'll cover</h2>
@@ -1006,17 +1006,17 @@ function FreeSessionPage({ setPage }) {
                   borderRadius: 16, border: "1px solid rgba(0,0,0,0.04)",
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.8rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.8rem",
                     fontWeight: 300, color: item.color, lineHeight: 1,
                     minWidth: 40,
                   }}>{item.num}</span>
                   <div>
                     <h3 style={{
-                      fontFamily: "'Fraunces', serif", fontSize: "1.1rem",
+                      fontFamily: "'Mercado', serif", fontSize: "1.1rem",
                       fontWeight: 500, color: "#2C2C2C", marginBottom: 4,
                     }}>{item.title}</h3>
                     <p style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                       lineHeight: 1.7, color: "#5E6B6E",
                     }}>{item.desc}</p>
                   </div>
@@ -1032,11 +1032,11 @@ function FreeSessionPage({ setPage }) {
               background: "#F2F0EE", borderRadius: 20,
             }}>
               <p style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                 color: "#5E6B6E", fontStyle: "italic", marginBottom: 8,
               }}>No prior knowledge needed. No symptoms required.</p>
               <p style={{
-                fontFamily: "'Fraunces', serif", fontSize: "1.3rem",
+                fontFamily: "'Mercado', serif", fontSize: "1.3rem",
                 fontWeight: 500, color: "#2C2C2C", marginBottom: 24,
               }}>Just curiosity.</p>
               <Btn onClick={() => setPage(PAGES.CONTACT, "Free session — Understanding Your Body After 35")}>Save My Spot →</Btn>
@@ -1046,11 +1046,11 @@ function FreeSessionPage({ setPage }) {
                 borderTop: "1px solid rgba(0,0,0,0.06)",
               }}>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                   color: "#8A9599", marginBottom: 12,
                 }}>Already know you want more?</p>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                   color: "#4D5B5E", marginBottom: 16,
                 }}>
                   Our 4-week live series <strong>Your Body After 35</strong> covers everything in proper depth. Founding cohort: €97 for the first 10.
@@ -1085,7 +1085,7 @@ function CorporatePage({ setPage }) {
           <FadeIn>
             <SectionLabel>For Organisations</SectionLabel>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
               fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
               marginTop: 16, marginBottom: 20,
             }}>
@@ -1094,7 +1094,7 @@ function CorporatePage({ setPage }) {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
               lineHeight: 1.7, color: "#5E6B6E",
             }}>
               Your most experienced employees are navigating a stage of life that affects energy, focus, sleep and long-term health. Most organisations do nothing about it.
@@ -1111,7 +1111,7 @@ function CorporatePage({ setPage }) {
               background: "#F6F5F3", borderRadius: 20, padding: "48px",
             }}>
               <p style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
                 lineHeight: 1.8, color: "#4D5B5E", marginBottom: 0,
               }}>
                 WeWomen brings evidence-based health education directly into your workplace. We help women understand what's changing, build sustainable habits, and show up at their strongest.
@@ -1127,7 +1127,7 @@ function CorporatePage({ setPage }) {
           <FadeIn>
             <SectionLabel>How we work with you</SectionLabel>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.6rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.6rem",
               fontWeight: 500, color: "#2C2C2C", marginTop: 12, marginBottom: 56,
             }}>Three levels of support</h2>
           </FadeIn>
@@ -1148,11 +1148,11 @@ function CorporatePage({ setPage }) {
                   background: "#3D9B8F",
                 }} />
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.3rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.3rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                 }}>Educate</h3>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                   color: "#8A9599", marginBottom: 20,
                 }}>Open the conversation</p>
                 <div style={{
@@ -1162,7 +1162,7 @@ function CorporatePage({ setPage }) {
                     <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
                       <span style={{ color: "#3D9B8F", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
                       <span style={{
-                        fontFamily: "'DM Sans', sans-serif", fontSize: "0.86rem",
+                        fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.86rem",
                         lineHeight: 1.5, color: "#4D5B5E",
                       }}>{t}</span>
                     </div>
@@ -1172,11 +1172,11 @@ function CorporatePage({ setPage }) {
                   borderTop: "1px solid rgba(0,0,0,0.06)", paddingTop: 20,
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.15rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.15rem",
                     fontWeight: 500, color: "#2C2C2C",
                   }}>From €2,500</span>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
                     color: "#8A9599", marginTop: 4,
                   }}>Per session · group size flexible</p>
                 </div>
@@ -1195,11 +1195,11 @@ function CorporatePage({ setPage }) {
                   background: "rgba(255,255,255,0.35)",
                 }} />
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.3rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.3rem",
                   fontWeight: 500, marginBottom: 6,
                 }}>Empower</h3>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                   opacity: 0.7, marginBottom: 20,
                 }}>Change behaviour</p>
                 <div style={{
@@ -1209,7 +1209,7 @@ function CorporatePage({ setPage }) {
                     <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
                       <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
                       <span style={{
-                        fontFamily: "'DM Sans', sans-serif", fontSize: "0.86rem",
+                        fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.86rem",
                         lineHeight: 1.5, opacity: 0.9,
                       }}>{t}</span>
                     </div>
@@ -1219,11 +1219,11 @@ function CorporatePage({ setPage }) {
                   borderTop: "1px solid rgba(255,255,255,0.15)", paddingTop: 20,
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.15rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.15rem",
                     fontWeight: 500,
                   }}>€4,500 – €12,000</span>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
                     opacity: 0.6, marginTop: 4,
                   }}>Depends on length and group size</p>
                 </div>
@@ -1242,11 +1242,11 @@ function CorporatePage({ setPage }) {
                   background: "#6B8F8A",
                 }} />
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontSize: "1.3rem",
+                  fontFamily: "'Mercado', serif", fontSize: "1.3rem",
                   fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
                 }}>Embed</h3>
                 <p style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                  fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                   color: "#8A9599", marginBottom: 20,
                 }}>Build it into your culture</p>
                 <div style={{
@@ -1256,7 +1256,7 @@ function CorporatePage({ setPage }) {
                     <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
                       <span style={{ color: "#6B8F8A", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
                       <span style={{
-                        fontFamily: "'DM Sans', sans-serif", fontSize: "0.86rem",
+                        fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.86rem",
                         lineHeight: 1.5, color: "#4D5B5E",
                       }}>{t}</span>
                     </div>
@@ -1266,11 +1266,11 @@ function CorporatePage({ setPage }) {
                   borderTop: "1px solid rgba(0,0,0,0.06)", paddingTop: 20,
                 }}>
                   <span style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.15rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.15rem",
                     fontWeight: 500, color: "#2C2C2C",
                   }}>From €2,000/month</span>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
                     color: "#8A9599", marginTop: 4,
                   }}>Plus cohort delivery fees</p>
                 </div>
@@ -1288,13 +1288,13 @@ function CorporatePage({ setPage }) {
               background: "#F2F0EE", borderRadius: 20, padding: "48px 40px",
             }}>
               <p style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                 color: "#5E6B6E", lineHeight: 1.8, marginBottom: 20,
               }}>
                 We've delivered our programme inside <strong style={{ color: "#2C2C2C" }}>KLM</strong> and work with organisations who want to lead on this.
               </p>
               <p style={{
-                fontFamily: "'Fraunces', serif", fontSize: "1.2rem",
+                fontFamily: "'Mercado', serif", fontSize: "1.2rem",
                 fontWeight: 500, color: "#2C2C2C",
               }}>
                 If that's you, let's talk.
@@ -1309,7 +1309,7 @@ function CorporatePage({ setPage }) {
         <FadeIn>
           <Btn variant="rose" onClick={() => setPage(PAGES.CONTACT, "Corporate — Employer fit call")}>Book an employer fit call →</Btn>
           <p style={{
-            fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+            fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
             color: "#8A9599", marginTop: 16,
           }}>20 minutes. No commitment. Just a conversation.</p>
         </FadeIn>
@@ -1330,20 +1330,20 @@ function AboutPage({ setPage }) {
           <FadeIn>
             <SectionLabel>About</SectionLabel>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
               fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
               marginTop: 16, marginBottom: 24,
             }}>We started asking questions. We couldn't stop.</h1>
           </FadeIn>
           <FadeIn delay={0.1}>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
               lineHeight: 1.8, color: "#4D5B5E", marginBottom: 20,
             }}>
               Women's health has been an afterthought for too long. The information exists — nobody made it their job to give it to you.
             </p>
             <p style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.2rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.2rem",
               fontWeight: 500, color: "#E07B68",
             }}>That's what we're here to change.</p>
           </FadeIn>
@@ -1355,17 +1355,17 @@ function AboutPage({ setPage }) {
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <FadeIn>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.5rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.5rem",
               fontWeight: 500, color: "#2C2C2C", marginBottom: 20,
             }}>What drives us</h2>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
               lineHeight: 1.8, color: "#4D5B5E", marginBottom: 20,
             }}>
               No quick fixes. No scare tactics. Just clear, practical information that changes how women live. Small, consistent changes built on real knowledge beat any crash programme.
             </p>
             <p style={{
-              fontFamily: "'Fraunces', serif", fontSize: "1.15rem",
+              fontFamily: "'Mercado', serif", fontSize: "1.15rem",
               color: "#E07B68", fontWeight: 500,
             }}>
               We're not here to add years to your life. We're here to add life to your years.
@@ -1404,20 +1404,20 @@ function AboutPage({ setPage }) {
                   borderTop: "3px solid #E07B68",
                 }}>
                   <h3 style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.4rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.4rem",
                     fontWeight: 500, color: "#2C2C2C", marginBottom: 16,
                   }}>Hi, I'm {p.name}.</h3>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.92rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.92rem",
                     lineHeight: 1.7, color: "#4D5B5E", marginBottom: 16,
                   }}>{p.intro}</p>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.92rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.92rem",
                     lineHeight: 1.7, color: "#4D5B5E", marginBottom: 20,
                     fontStyle: "italic",
                   }}>{p.belief}</p>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
                     color: "#8A9599", lineHeight: 1.6,
                   }}>{p.certs}</p>
                 </div>
@@ -1427,7 +1427,7 @@ function AboutPage({ setPage }) {
 
           <FadeIn>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
               lineHeight: 1.8, color: "#4D5B5E", marginTop: 48,
               textAlign: "center", maxWidth: 600, margin: "48px auto 0",
             }}>
@@ -1469,7 +1469,7 @@ function ContactPage({ interest, setInterest }) {
 
   const is = {
     padding: "14px 18px", border: "1px solid rgba(0,0,0,0.08)",
-    borderRadius: 12, fontFamily: "'DM Sans', sans-serif",
+    borderRadius: 12, fontFamily: "'Montserrat Alternates', sans-serif",
     fontSize: "0.9rem", background: "#fff", outline: "none",
     width: "100%", boxSizing: "border-box",
   };
@@ -1481,11 +1481,11 @@ function ContactPage({ interest, setInterest }) {
           <FadeIn>
             <SectionLabel>Contact</SectionLabel>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)",
+              fontFamily: "'Mercado', serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)",
               fontWeight: 500, color: "#2C2C2C", marginTop: 16, marginBottom: 20,
             }}>We'd love to hear from you.</h1>
             <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: "1rem",
+              fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
               lineHeight: 1.7, color: "#5E6B6E", marginBottom: 40,
             }}>
               Whether you have a question, want to bring WeWomen into your organisation, or just want to say hello — we're here.
@@ -1508,18 +1508,18 @@ function ContactPage({ interest, setInterest }) {
                   borderBottom: "1px solid rgba(0,0,0,0.06)",
                 }}>
                   <span style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                     color: "#8A9599", textTransform: "uppercase", letterSpacing: "0.08em",
                   }}>{item.label}</span>
                   {item.href ? (
                     <a href={item.href} target="_blank" rel="noopener noreferrer" style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                       color: "#2C2C2C", fontWeight: 500, textDecoration: "none",
                       borderBottom: "1px solid rgba(0,0,0,0.1)",
                     }}>{item.value}</a>
                   ) : (
                     <span style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
                       color: "#2C2C2C", fontWeight: 500,
                     }}>{item.value}</span>
                   )}
@@ -1539,22 +1539,22 @@ function ContactPage({ interest, setInterest }) {
                     margin: "0 auto 20px", fontSize: "1.5rem", color: "#3D9B8F",
                   }}>✓</div>
                   <h3 style={{
-                    fontFamily: "'Fraunces', serif", fontSize: "1.3rem",
+                    fontFamily: "'Mercado', serif", fontSize: "1.3rem",
                     fontWeight: 500, color: "#2C2C2C", marginBottom: 8,
                   }}>Thanks{name ? `, ${name}` : ""}!</h3>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                     color: "#5E6B6E", lineHeight: 1.6, marginBottom: 4,
                   }}>We'll get back to you within 2 business days.</p>
                   {interest && <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
                     color: "#8A9599",
                   }}>Re: {interest}</p>}
                   <button
                     onClick={() => { setSent(false); setName(""); setEmail(""); setMsg(""); setInterest(""); }}
                     style={{
                       background: "none", border: "none", color: "#3D9B8F",
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                       fontWeight: 600, cursor: "pointer", marginTop: 20,
                     }}
                   >Send another message</button>
@@ -1562,7 +1562,7 @@ function ContactPage({ interest, setInterest }) {
               ) : (
                 <>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem",
+                    fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                     color: "#5E6B6E", marginBottom: 24,
                   }}>Tell us what you're interested in and we'll get back to you within 2 business days.</p>
                   <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -1589,7 +1589,7 @@ function ContactPage({ interest, setInterest }) {
                       style={{ opacity: (name && email) ? 1 : 0.5 }}
                     >Send →</Btn>
                     <p style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem",
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem",
                       color: "#8A9599", textAlign: "center",
                     }}>Or email us directly at hello@wewomen.fit</p>
                   </div>
