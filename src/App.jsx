@@ -1282,20 +1282,82 @@ function CorporatePage({ setPage }) {
 
       {/* Social proof */}
       <section style={{ padding: "0 24px 80px" }}>
-        <div style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <FadeIn>
             <div style={{
-              background: "#F2F0EE", borderRadius: 20, padding: "48px 40px",
+              background: "#F2F0EE", borderRadius: 20, padding: "56px 48px",
+              textAlign: "center",
             }}>
+              {/* Header + KLM logo */}
               <p style={{
-                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
-                color: "#5E6B6E", lineHeight: 1.8, marginBottom: 20,
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem",
+                textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1",
+                marginBottom: 16,
+              }}>Trusted by</p>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c7/KLM_logo.svg"
+                alt="KLM Royal Dutch Airlines"
+                style={{ height: 48, marginBottom: 32, opacity: 0.85 }}
+              />
+              <p style={{
+                fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
+                color: "#5E6B6E", lineHeight: 1.8, marginBottom: 40, maxWidth: 600,
+                margin: "0 auto 40px",
               }}>
-                We've delivered our programme inside <strong style={{ color: "#2C2C2C" }}>KLM</strong> and work with organisations who want to lead on this.
+                We delivered our 12-week programme to women at KLM — and the results speak for themselves.
               </p>
+
+              {/* Stats row */}
+              <div style={{
+                display: "flex", justifyContent: "center", gap: 48, marginBottom: 48,
+                flexWrap: "wrap",
+              }}>
+                {[
+                  { stat: "94%", label: "felt more confident about their health" },
+                  { stat: "89%", label: "made lasting lifestyle changes" },
+                  { stat: "4.8/5", label: "average programme rating" },
+                ].map((s, i) => (
+                  <div key={i} style={{ textAlign: "center", minWidth: 160 }}>
+                    <p style={{
+                      fontFamily: "'Mercado', serif", fontSize: "2rem",
+                      color: "#3D9B8F", marginBottom: 8,
+                    }}>{s.stat}</p>
+                    <p style={{
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
+                      color: "#5E6B6E", lineHeight: 1.5, maxWidth: 160,
+                    }}>{s.label}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Testimonials */}
+              <div style={{
+                display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center",
+              }}>
+                {[
+                  { quote: "I finally understand what's happening in my body — and I feel so much more in control.", name: "Programme participant, KLM" },
+                  { quote: "The sessions were eye-opening. I wish I'd had this knowledge ten years ago.", name: "Programme participant, KLM" },
+                  { quote: "It brought our team closer together and started conversations we'd never had before.", name: "Programme participant, KLM" },
+                ].map((t, i) => (
+                  <div key={i} style={{
+                    background: "#fff", borderRadius: 16, padding: "28px 24px",
+                    flex: "1 1 240px", maxWidth: 280, textAlign: "left",
+                  }}>
+                    <p style={{
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
+                      color: "#4D5B5E", lineHeight: 1.7, fontStyle: "italic", marginBottom: 16,
+                    }}>"{t.quote}"</p>
+                    <p style={{
+                      fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem",
+                      color: "#8A9599",
+                    }}>— {t.name}</p>
+                  </div>
+                ))}
+              </div>
+
               <p style={{
                 fontFamily: "'Mercado', serif", fontSize: "1.2rem",
-                fontWeight: 500, color: "#2C2C2C",
+                fontWeight: 500, color: "#2C2C2C", marginTop: 40,
               }}>
                 If that's you, let's talk.
               </p>
