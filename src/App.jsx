@@ -64,7 +64,7 @@ function Nav({ page, setPage }) {
         background: "none", border: "none", cursor: "pointer",
         fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
         letterSpacing: "0.04em", textTransform: "uppercase",
-        color: page === target ? "#3D9B8F" : "#3a3a3a",
+        color: page === target ? "#2E5650" : "#3a3a3a",
         fontWeight: page === target ? 600 : 400,
         padding: "4px 0", transition: "color 0.3s",
       }}
@@ -75,9 +75,9 @@ function Nav({ page, setPage }) {
     <>
       <nav style={{
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
-        background: scrolled ? "rgba(253,247,242,0.95)" : "rgba(253,247,242,0.8)",
+        background: scrolled ? "rgba(250,248,244,0.95)" : "rgba(250,248,244,0.8)",
         backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)",
-        borderBottom: scrolled ? "1px solid rgba(61,155,143,0.1)" : "1px solid transparent",
+        borderBottom: scrolled ? "1px solid rgba(46,86,80,0.1)" : "1px solid transparent",
         transition: "all 0.4s ease",
       }}>
         <div style={{
@@ -90,7 +90,7 @@ function Nav({ page, setPage }) {
           }}>
             <span style={{
               fontFamily: "'Mercado', serif", fontSize: "1.5rem",
-              fontWeight: 600, color: "#3D9B8F", letterSpacing: "-0.02em",
+              fontWeight: 600, color: "#2E5650", letterSpacing: "-0.02em",
             }}>WeWomen</span>
           </button>
 
@@ -105,13 +105,13 @@ function Nav({ page, setPage }) {
             <button
               onClick={() => setPage(PAGES.FOR_YOU)}
               style={{
-                background: "#3D9B8F", color: "#fff", border: "none",
+                background: "#2E5650", color: "#fff", border: "none",
                 borderRadius: 100, padding: "10px 22px", cursor: "pointer",
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                 fontWeight: 600, letterSpacing: "0.03em",
                 transition: "transform 0.2s, box-shadow 0.2s",
               }}
-              onMouseEnter={e => { e.target.style.transform = "scale(1.04)"; e.target.style.boxShadow = "0 4px 20px rgba(61,155,143,0.3)"; }}
+              onMouseEnter={e => { e.target.style.transform = "scale(1.04)"; e.target.style.boxShadow = "0 4px 20px rgba(46,86,80,0.3)"; }}
               onMouseLeave={e => { e.target.style.transform = "scale(1)"; e.target.style.boxShadow = "none"; }}
             >Free Session</button>
           </div>
@@ -135,7 +135,7 @@ function Nav({ page, setPage }) {
         <div style={{
           maxHeight: open ? 400 : 0, overflow: "hidden",
           transition: "max-height 0.4s cubic-bezier(.22,1,.36,1)",
-          background: "rgba(253,247,242,0.98)",
+          background: "rgba(250,248,244,0.98)",
         }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 16, padding: "8px 24px 24px" }}>
             {link("For You", PAGES.FOR_YOU)}
@@ -145,7 +145,7 @@ function Nav({ page, setPage }) {
             <button
               onClick={() => setPage(PAGES.FOR_YOU)}
               style={{
-                background: "#3D9B8F", color: "#fff", border: "none",
+                background: "#2E5650", color: "#fff", border: "none",
                 borderRadius: 100, padding: "12px 22px", cursor: "pointer",
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                 fontWeight: 600, marginTop: 4,
@@ -167,7 +167,7 @@ function Nav({ page, setPage }) {
 
 function Footer({ setPage }) {
   return (
-    <footer style={{ background: "#1B2E2C", color: "#E0E8EA", padding: "80px 24px 40px" }}>
+    <footer style={{ background: "#2E5650", color: "#E0E8EA", padding: "80px 24px 40px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <div style={{
           display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
@@ -176,48 +176,48 @@ function Footer({ setPage }) {
           <div>
             <span style={{
               fontFamily: "'Mercado', serif", fontSize: "1.8rem",
-              fontWeight: 600, color: "#7ECBC1",
+              fontWeight: 600, color: "#85a49a",
             }}>WeWomen</span>
             <p style={{
               fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
-              lineHeight: 1.7, color: "#96A5A8", marginTop: 16,
+              lineHeight: 1.7, color: "#a3b5ab", marginTop: 16,
               fontStyle: "italic",
             }}>Your Health, Finally Understood.</p>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Navigate</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#85a49a", marginBottom: 4 }}>Navigate</span>
             {[["For You", PAGES.FOR_YOU], ["Free Session", PAGES.FREE_SESSION], ["Corporate", PAGES.CORPORATE], ["About", PAGES.ABOUT]].map(([l, p]) => (
               <button key={p} onClick={() => setPage(p)} style={{
-                background: "none", border: "none", color: "#B0BEC2", cursor: "pointer",
+                background: "none", border: "none", color: "#b5c4ba", cursor: "pointer",
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", textAlign: "left",
                 padding: 0, transition: "color 0.2s",
               }}
               onMouseEnter={e => e.target.style.color = "#fff"}
-              onMouseLeave={e => e.target.style.color = "#B0BEC2"}
+              onMouseLeave={e => e.target.style.color = "#b5c4ba"}
               >{l}</button>
             ))}
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Get in Touch</span>
-            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>hello@wewomen.fit</span>
-            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>+31 6 13 46 63 79</span>
-            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#B0BEC2" }}>IJburg, Amsterdam</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#85a49a", marginBottom: 4 }}>Get in Touch</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#b5c4ba" }}>hello@wewomen.fit</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#b5c4ba" }}>+31 6 13 46 63 79</span>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem", color: "#b5c4ba" }}>IJburg, Amsterdam</span>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1", marginBottom: 4 }}>Stay in the loop</span>
-            <p style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem", color: "#96A5A8", lineHeight: 1.6 }}>New programmes, upcoming sessions, and the occasional piece of advice worth reading.</p>
+            <span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#85a49a", marginBottom: 4 }}>Stay in the loop</span>
+            <p style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem", color: "#a3b5ab", lineHeight: 1.6 }}>New programmes, upcoming sessions, and the occasional piece of advice worth reading.</p>
             <div style={{ display: "flex", gap: 8, marginTop: 4 }}>
               <input placeholder="Your email" style={{
-                flex: 1, padding: "10px 14px", border: "1px solid #3A4E4B",
+                flex: 1, padding: "10px 14px", border: "1px solid #3d5c55",
                 borderRadius: 8, background: "rgba(255,255,255,0.05)",
                 color: "#E0E8EA", fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                 outline: "none",
               }} />
               <button style={{
-                background: "#3D9B8F", color: "#fff", border: "none",
+                background: "#2E5650", color: "#fff", border: "none",
                 borderRadius: 8, padding: "10px 16px", cursor: "pointer",
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem", fontWeight: 600,
               }}>Join</button>
@@ -247,26 +247,26 @@ function Btn({ children, variant = "primary", onClick, style: s = {} }) {
     alignItems: "center", gap: 8,
   };
   const styles = {
-    primary: { ...base, background: "#3D9B8F", color: "#fff", padding: "14px 32px", ...s },
-    secondary: { ...base, background: "transparent", color: "#3D9B8F", padding: "14px 32px", border: "2px solid #3D9B8F", ...s },
-    soft: { ...base, background: "rgba(61,155,143,0.1)", color: "#3D9B8F", padding: "14px 32px", ...s },
-    rose: { ...base, background: "#E07B68", color: "#fff", padding: "14px 32px", ...s },
+    primary: { ...base, background: "#2E5650", color: "#fff", padding: "14px 32px", ...s },
+    secondary: { ...base, background: "transparent", color: "#2E5650", padding: "14px 32px", border: "2px solid #2E5650", ...s },
+    soft: { ...base, background: "rgba(46,86,80,0.08)", color: "#2E5650", padding: "14px 32px", ...s },
+    rose: { ...base, background: "#b04646", color: "#fff", padding: "14px 32px", ...s },
   };
   return (
     <button
       onClick={onClick} style={styles[variant] || styles.primary}
-      onMouseEnter={e => { e.target.style.transform = "translateY(-2px)"; e.target.style.boxShadow = variant === "primary" ? "0 6px 24px rgba(61,155,143,0.25)" : variant === "rose" ? "0 6px 24px rgba(224,123,104,0.3)" : "none"; }}
+      onMouseEnter={e => { e.target.style.transform = "translateY(-2px)"; e.target.style.boxShadow = variant === "primary" ? "0 6px 24px rgba(46,86,80,0.25)" : variant === "rose" ? "0 6px 24px rgba(176,70,70,0.3)" : "none"; }}
       onMouseLeave={e => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "none"; }}
     >{children}</button>
   );
 }
 
-function SectionLabel({ children }) {
+function SectionLabel({ children, color = "#85a49a" }) {
   return (
     <span style={{
       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.72rem",
       textTransform: "uppercase", letterSpacing: "0.16em",
-      color: "#3D9B8F", fontWeight: 600,
+      color, fontWeight: 600,
     }}>{children}</span>
   );
 }
@@ -288,26 +288,26 @@ function HomePage({ setPage }) {
         <div style={{
           position: "absolute", top: -120, right: -120,
           width: 500, height: 500, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(61,155,143,0.06) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(133,164,154,0.08) 0%, transparent 70%)",
         }} />
         <div style={{
           position: "absolute", bottom: -80, left: -80,
           width: 400, height: 400, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(224,123,104,0.07) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(133,164,154,0.06) 0%, transparent 70%)",
         }} />
 
         <div style={{ maxWidth: 800, textAlign: "center", position: "relative" }}>
           <FadeIn>
-            <SectionLabel><span style={{ color: "#E07B68" }}>Evidence-based women's health</span></SectionLabel>
+            <SectionLabel><span style={{ color: "#b04646" }}>Evidence-based women's health</span></SectionLabel>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(2.4rem, 5.5vw, 4rem)",
-              fontWeight: 500, lineHeight: 1.15, color: "#2C2C2C",
+              fontWeight: 500, lineHeight: 1.15, color: "#2E5650",
               marginTop: 20, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
               Your body is changing.{" "}
-              <span style={{ color: "#3D9B8F" }}>We help you understand it.</span>
+              <span style={{ color: "#2E5650" }}>We help you understand it.</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -321,8 +321,8 @@ function HomePage({ setPage }) {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Btn onClick={() => setPage(PAGES.FOR_YOU)}>For Me →</Btn>
-              <Btn variant="secondary" onClick={() => setPage(PAGES.CORPORATE)}>For My Organisation →</Btn>
+              <Btn onClick={() => setPage(PAGES.FOR_YOU)}>For me →</Btn>
+              <Btn variant="rose" onClick={() => setPage(PAGES.CORPORATE)}>For my organisation →</Btn>
             </div>
           </FadeIn>
         </div>
@@ -330,13 +330,13 @@ function HomePage({ setPage }) {
 
       {/* Middle content */}
       <section style={{
-        padding: "100px 24px", background: "#F2F0EE",
+        padding: "100px 24px", background: "#f3ede2",
       }}>
         <div style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
           <FadeIn>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
-              fontWeight: 400, lineHeight: 1.3, color: "#2C2C2C",
+              fontWeight: 400, lineHeight: 1.3, color: "#2E5650",
               marginBottom: 24,
             }}>Let's be honest — something shifted.</h2>
           </FadeIn>
@@ -363,7 +363,7 @@ function HomePage({ setPage }) {
             <SectionLabel>How we help</SectionLabel>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
-              fontWeight: 500, color: "#2C2C2C", marginTop: 12, marginBottom: 56,
+              fontWeight: 500, color: "#2E5650", marginTop: 12, marginBottom: 56,
             }}>Two ways to work with us</h2>
           </FadeIn>
 
@@ -373,8 +373,8 @@ function HomePage({ setPage }) {
           }}>
             <FadeIn delay={0.1}>
               <div style={{
-                background: "#F6F5F3", borderRadius: 20, padding: "48px 36px",
-                border: "1px solid rgba(61,155,143,0.1)",
+                background: "#ffffff", borderRadius: 20, padding: "48px 36px",
+                border: "1px solid rgba(133,164,154,0.2)",
                 transition: "transform 0.3s, box-shadow 0.3s",
                 cursor: "pointer",
               }}
@@ -384,13 +384,13 @@ function HomePage({ setPage }) {
               >
                 <div style={{
                   width: 56, height: 56, borderRadius: 16,
-                  background: "rgba(61,155,143,0.1)", display: "flex",
+                  background: "rgba(133,164,154,0.15)", display: "flex",
                   alignItems: "center", justifyContent: "center",
                   fontSize: "1.6rem", marginBottom: 24,
                 }}>✦</div>
                 <h3 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 12,
+                  fontWeight: 500, color: "#2E5650", marginBottom: 12,
                 }}>For You</h3>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
@@ -400,15 +400,15 @@ function HomePage({ setPage }) {
                 </p>
                 <span style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
-                  color: "#3D9B8F", fontWeight: 600,
+                  color: "#2E5650", fontWeight: 600,
                 }}>Explore options →</span>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <div style={{
-                background: "#F6F5F3", borderRadius: 20, padding: "48px 36px",
-                border: "1px solid rgba(224,123,104,0.12)",
+                background: "#ffffff", borderRadius: 20, padding: "48px 36px",
+                border: "1px solid rgba(229,139,127,0.25)",
                 transition: "transform 0.3s, box-shadow 0.3s",
                 cursor: "pointer",
               }}
@@ -418,13 +418,13 @@ function HomePage({ setPage }) {
               >
                 <div style={{
                   width: 56, height: 56, borderRadius: 16,
-                  background: "rgba(224,123,104,0.1)", display: "flex",
+                  background: "rgba(229,139,127,0.15)", display: "flex",
                   alignItems: "center", justifyContent: "center",
                   fontSize: "1.6rem", marginBottom: 24,
                 }}>◈</div>
                 <h3 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 12,
+                  fontWeight: 500, color: "#b04646", marginBottom: 12,
                 }}>For Organisations</h3>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
@@ -434,7 +434,7 @@ function HomePage({ setPage }) {
                 </p>
                 <span style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
-                  color: "#E07B68", fontWeight: 600,
+                  color: "#b04646", fontWeight: 600,
                 }}>Learn more →</span>
               </div>
             </FadeIn>
@@ -443,7 +443,7 @@ function HomePage({ setPage }) {
       </section>
 
       {/* Testimonials */}
-      <section style={{ padding: "100px 24px", background: "#3D9B8F" }}>
+      <section style={{ padding: "100px 24px", background: "#2E5650" }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
           <FadeIn>
             <SectionLabel><span style={{ color: "rgba(255,255,255,0.5)" }}>Words from women</span></SectionLabel>
@@ -485,7 +485,7 @@ function HomePage({ setPage }) {
         <FadeIn>
           <h2 style={{
             fontFamily: "'Mercado', serif", fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
-            fontWeight: 400, color: "#2C2C2C", marginBottom: 16,
+            fontWeight: 400, color: "#2E5650", marginBottom: 16,
           }}>Not sure where to start?</h2>
           <p style={{
             fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
@@ -505,7 +505,7 @@ function HomePage({ setPage }) {
 // FOR YOU PAGE
 // ═══════════════════════════════════════
 function ForYouPage({ setPage }) {
-  const tag = (label, color = "#3D9B8F") => (
+  const tag = (label, color = "#85a49a") => (
     <span style={{
       display: "inline-block", padding: "3px 10px", borderRadius: 100,
       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
@@ -523,7 +523,7 @@ function ForYouPage({ setPage }) {
             <SectionLabel>For You</SectionLabel>
             <h1 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
-              fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
+              fontWeight: 500, lineHeight: 1.2, color: "#2E5650",
               marginTop: 16, marginBottom: 20,
             }}>
               The more you understand your body, the more you can trust it.
@@ -545,14 +545,14 @@ function ForYouPage({ setPage }) {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <FadeIn>
             <div style={{
-              background: "linear-gradient(135deg, #3D9B8F 0%, #2d7a70 100%)",
+              background: "linear-gradient(135deg, #2E5650 0%, #1f3d38 100%)",
               borderRadius: 24, padding: "48px 40px", color: "#fff",
               position: "relative", overflow: "hidden",
             }}>
               <div style={{
                 position: "absolute", top: -60, right: -60,
                 width: 200, height: 200, borderRadius: "50%",
-                background: "rgba(224,123,104,0.08)",
+                background: "rgba(133,164,154,0.06)",
               }} />
               <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
                 {tag("Start here", "#fff")}
@@ -572,7 +572,7 @@ function ForYouPage({ setPage }) {
                 <button
                   onClick={() => setPage(PAGES.FOR_YOU)}
                   style={{
-                    background: "#fff", color: "#3D9B8F", border: "none",
+                    background: "#fff", color: "#2E5650", border: "none",
                     borderRadius: 100, padding: "14px 28px", cursor: "pointer",
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                     fontWeight: 600, transition: "transform 0.2s",
@@ -597,7 +597,7 @@ function ForYouPage({ setPage }) {
             <SectionLabel>Online Programmes</SectionLabel>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-              fontWeight: 500, color: "#2C2C2C", marginTop: 10, marginBottom: 28,
+              fontWeight: 500, color: "#2E5650", marginTop: 10, marginBottom: 28,
             }}>Learn at your own pace</h2>
           </FadeIn>
 
@@ -605,8 +605,8 @@ function ForYouPage({ setPage }) {
             {/* Featured: 4-week */}
             <FadeIn delay={0.05}>
               <div style={{
-                background: "#F6F5F3", borderRadius: 20, padding: "40px 36px",
-                border: "1px solid rgba(61,155,143,0.08)",
+                background: "#ffffff", borderRadius: 20, padding: "40px 36px",
+                border: "1px solid rgba(133,164,154,0.15)",
               }}>
                 <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
                   {tag("Live programme")}
@@ -614,12 +614,12 @@ function ForYouPage({ setPage }) {
                     display: "inline-block", padding: "3px 10px", borderRadius: 100,
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
                     fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
-                    color: "#fff", background: "#E07B68",
+                    color: "#fff", background: "#e58b7f",
                   }}>Now open</span>
                 </div>
                 <h3 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                  fontWeight: 500, color: "#2E5650", marginBottom: 6,
                 }}>Your Body After 35</h3>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
@@ -637,12 +637,12 @@ function ForYouPage({ setPage }) {
                   ].map(([w, t], i) => (
                     <div key={i} style={{
                       background: "#fff", borderRadius: 12, padding: "14px 16px",
-                      border: "1px solid rgba(61,155,143,0.08)",
+                      border: "1px solid rgba(133,164,154,0.12)",
                     }}>
                       <span style={{
                         fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
                         textTransform: "uppercase", letterSpacing: "0.1em",
-                        color: "#3D9B8F", fontWeight: 600,
+                        color: "#85a49a", fontWeight: 600,
                       }}>{w}</span>
                       <p style={{
                         fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.84rem",
@@ -658,12 +658,12 @@ function ForYouPage({ setPage }) {
                 }}>
                   <span style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-                    fontWeight: 500, color: "#2C2C2C",
+                    fontWeight: 500, color: "#2E5650",
                   }}>€129</span>
                   <span style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
-                    color: "#E07B68", fontWeight: 600,
-                    background: "rgba(224,123,104,0.1)", padding: "5px 12px",
+                    color: "#b04646", fontWeight: 600,
+                    background: "rgba(176,70,70,0.08)", padding: "5px 12px",
                     borderRadius: 100,
                   }}>Founding: €97 (first 10)</span>
                   <span style={{ flex: 1 }} />
@@ -683,7 +683,7 @@ function ForYouPage({ setPage }) {
                   <div style={{ marginBottom: 12 }}>{tag("Recorded workshop")}</div>
                   <h4 style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.05rem",
-                    fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                    fontWeight: 500, color: "#2E5650", marginBottom: 6,
                   }}>Know Your Floor</h4>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
@@ -695,11 +695,11 @@ function ForYouPage({ setPage }) {
                   }}>
                     <span style={{
                       fontFamily: "'Mercado', serif", fontSize: "1.1rem",
-                      fontWeight: 500, color: "#2C2C2C",
+                      fontWeight: 500, color: "#2E5650",
                     }}>€39</span>
                     <span onClick={() => setPage(PAGES.CONTACT, "Know Your Floor — Pelvic health webinar")} style={{
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
-                      color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
+                      color: "#2E5650", fontWeight: 600, cursor: "pointer",
                     }}>Get access →</span>
                   </div>
                 </div>
@@ -714,7 +714,7 @@ function ForYouPage({ setPage }) {
                   <div style={{ marginBottom: 12 }}>{tag("On demand")}</div>
                   <h4 style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.05rem",
-                    fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                    fontWeight: 500, color: "#2E5650", marginBottom: 6,
                   }}>Stronger Together Workout Pack</h4>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
@@ -726,11 +726,11 @@ function ForYouPage({ setPage }) {
                   }}>
                     <span style={{
                       fontFamily: "'Mercado', serif", fontSize: "1.1rem",
-                      fontWeight: 500, color: "#2C2C2C",
+                      fontWeight: 500, color: "#2E5650",
                     }}>€27</span>
                     <span onClick={() => setPage(PAGES.CONTACT, "Stronger Together Workout Pack")} style={{
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
-                      color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
+                      color: "#2E5650", fontWeight: 600, cursor: "pointer",
                     }}>Get the pack →</span>
                   </div>
                 </div>
@@ -747,7 +747,7 @@ function ForYouPage({ setPage }) {
             <SectionLabel>In Amsterdam</SectionLabel>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-              fontWeight: 500, color: "#2C2C2C", marginTop: 10, marginBottom: 28,
+              fontWeight: 500, color: "#2E5650", marginTop: 10, marginBottom: 28,
             }}>Train with us in person</h2>
           </FadeIn>
 
@@ -761,7 +761,7 @@ function ForYouPage({ setPage }) {
                 <div style={{ marginBottom: 12 }}>{tag("Group class")}</div>
                 <h4 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.05rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                  fontWeight: 500, color: "#2E5650", marginBottom: 6,
                 }}>Stronger Together</h4>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
@@ -779,11 +779,11 @@ function ForYouPage({ setPage }) {
                 }}>
                   <span style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.1rem",
-                    fontWeight: 500, color: "#2C2C2C",
+                    fontWeight: 500, color: "#2E5650",
                   }}>€15<span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", color: "#8A9599", fontWeight: 400 }}>/class</span></span>
                   <span onClick={() => setPage(PAGES.CONTACT, "Group classes — IJburg, Amsterdam")} style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
-                    color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
+                    color: "#2E5650", fontWeight: 600, cursor: "pointer",
                   }}>Sign up →</span>
                 </div>
               </div>
@@ -798,7 +798,7 @@ function ForYouPage({ setPage }) {
                 <div style={{ marginBottom: 12 }}>{tag("Group class")}</div>
                 <h4 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.05rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                  fontWeight: 500, color: "#2E5650", marginBottom: 6,
                 }}>Power Up</h4>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
@@ -816,11 +816,11 @@ function ForYouPage({ setPage }) {
                 }}>
                   <span style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.1rem",
-                    fontWeight: 500, color: "#2C2C2C",
+                    fontWeight: 500, color: "#2E5650",
                   }}>€15<span style={{ fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem", color: "#8A9599", fontWeight: 400 }}>/class</span></span>
                   <span onClick={() => setPage(PAGES.CONTACT, "Group classes — IJburg, Amsterdam")} style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
-                    color: "#3D9B8F", fontWeight: 600, cursor: "pointer",
+                    color: "#2E5650", fontWeight: 600, cursor: "pointer",
                   }}>Sign up →</span>
                 </div>
               </div>
@@ -836,13 +836,13 @@ function ForYouPage({ setPage }) {
             <SectionLabel>Personal Coaching</SectionLabel>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-              fontWeight: 500, color: "#2C2C2C", marginTop: 10, marginBottom: 28,
+              fontWeight: 500, color: "#2E5650", marginTop: 10, marginBottom: 28,
             }}>One-to-one support</h2>
           </FadeIn>
 
           <FadeIn delay={0.05}>
             <div style={{
-              background: "#F6F5F3", borderRadius: 20, padding: "36px 32px",
+              background: "#ffffff", borderRadius: 20, padding: "36px 32px",
               display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
               gap: 24,
             }}>
@@ -856,12 +856,12 @@ function ForYouPage({ setPage }) {
                     display: "inline-block", padding: "3px 10px", borderRadius: 100,
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.68rem",
                     fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
-                    color: "#E07B68", background: "rgba(224,123,104,0.08)",
+                    color: "#85a49a", background: "rgba(133,164,154,0.1)",
                     marginBottom: 12,
                   }}>{item.tag}</span>
                   <h4 style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.05rem",
-                    fontWeight: 500, color: "#2C2C2C", marginBottom: 2,
+                    fontWeight: 500, color: "#2E5650", marginBottom: 2,
                   }}>{item.title}</h4>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
@@ -908,12 +908,12 @@ function FreeSessionPage({ setPage }) {
           position: "absolute", top: "50%", left: "50%",
           transform: "translate(-50%, -50%)",
           width: 600, height: 600, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(61,155,143,0.04) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(133,164,154,0.06) 0%, transparent 70%)",
         }} />
         <div style={{ maxWidth: 640, margin: "0 auto", position: "relative" }}>
           <FadeIn>
             <span style={{
-              display: "inline-block", background: "#3D9B8F", color: "#fff",
+              display: "inline-block", background: "#2E5650", color: "#fff",
               padding: "6px 18px", borderRadius: 100, marginBottom: 24,
               fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem",
               fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em",
@@ -922,7 +922,7 @@ function FreeSessionPage({ setPage }) {
           <FadeIn delay={0.1}>
             <h1 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
-              fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
+              fontWeight: 500, lineHeight: 1.2, color: "#2E5650",
               marginBottom: 12,
             }}>Understanding Your Body After 35</h1>
           </FadeIn>
@@ -964,7 +964,7 @@ function FreeSessionPage({ setPage }) {
               <FadeIn key={i} delay={i * 0.06}>
                 <div style={{
                   textAlign: "center", padding: "28px 20px",
-                  background: "#F6F5F3", borderRadius: 16,
+                  background: "#ffffff", borderRadius: 16,
                 }}>
                   <div style={{ fontSize: "1.5rem", marginBottom: 10 }}>{d.icon}</div>
                   <span style={{
@@ -974,7 +974,7 @@ function FreeSessionPage({ setPage }) {
                   }}>{d.label}</span>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
-                    fontWeight: 600, color: "#2C2C2C", marginTop: 4,
+                    fontWeight: 600, color: "#2E5650", marginTop: 4,
                   }}>{d.value}</p>
                 </div>
               </FadeIn>
@@ -985,7 +985,7 @@ function FreeSessionPage({ setPage }) {
           <FadeIn>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "1.5rem",
-              fontWeight: 500, color: "#2C2C2C", marginBottom: 28,
+              fontWeight: 500, color: "#2E5650", marginBottom: 28,
               textAlign: "center",
             }}>What we'll cover</h2>
           </FadeIn>
@@ -995,9 +995,9 @@ function FreeSessionPage({ setPage }) {
             marginBottom: 56,
           }}>
             {[
-              { num: "01", title: "What's actually changing", desc: "The hormonal shifts happening in your body right now — explained simply.", color: "#3D9B8F" },
-              { num: "02", title: "How to move differently", desc: "Why strength training matters more now than ever — and what to rethink about exercise.", color: "#E07B68" },
-              { num: "03", title: "How to calm your system", desc: "Why stress hits differently now — and one breathing technique you'll practise live.", color: "#3D9B8F" },
+              { num: "01", title: "What's actually changing", desc: "The hormonal shifts happening in your body right now — explained simply.", color: "#85a49a" },
+              { num: "02", title: "How to move differently", desc: "Why strength training matters more now than ever — and what to rethink about exercise.", color: "#85a49a" },
+              { num: "03", title: "How to calm your system", desc: "Why stress hits differently now — and one breathing technique you'll practise live.", color: "#85a49a" },
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.08}>
                 <div style={{
@@ -1013,7 +1013,7 @@ function FreeSessionPage({ setPage }) {
                   <div>
                     <h3 style={{
                       fontFamily: "'Mercado', serif", fontSize: "1.1rem",
-                      fontWeight: 500, color: "#2C2C2C", marginBottom: 4,
+                      fontWeight: 500, color: "#2E5650", marginBottom: 4,
                     }}>{item.title}</h3>
                     <p style={{
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
@@ -1029,7 +1029,7 @@ function FreeSessionPage({ setPage }) {
           <FadeIn>
             <div style={{
               textAlign: "center", padding: "48px 32px",
-              background: "#F2F0EE", borderRadius: 20,
+              background: "#f3ede2", borderRadius: 20,
             }}>
               <p style={{
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
@@ -1037,7 +1037,7 @@ function FreeSessionPage({ setPage }) {
               }}>No prior knowledge needed. No symptoms required.</p>
               <p style={{
                 fontFamily: "'Mercado', serif", fontSize: "1.3rem",
-                fontWeight: 500, color: "#2C2C2C", marginBottom: 24,
+                fontWeight: 500, color: "#2E5650", marginBottom: 24,
               }}>Just curiosity.</p>
               <Btn onClick={() => setPage(PAGES.CONTACT, "Free session — Understanding Your Body After 35")}>Save My Spot →</Btn>
 
@@ -1079,14 +1079,14 @@ function CorporatePage({ setPage }) {
         <div style={{
           position: "absolute", top: -100, right: -150,
           width: 500, height: 500, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(224,123,104,0.06) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(229,139,127,0.06) 0%, transparent 70%)",
         }} />
         <div style={{ maxWidth: 740, margin: "0 auto", position: "relative" }}>
           <FadeIn>
-            <SectionLabel>For Organisations</SectionLabel>
+            <SectionLabel color="#b04646">For Organisations</SectionLabel>
             <h1 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(2rem, 4.5vw, 3rem)",
-              fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
+              fontWeight: 500, lineHeight: 1.2, color: "#b04646",
               marginTop: 16, marginBottom: 20,
             }}>
               Invest in the women who keep your organisation running.
@@ -1108,7 +1108,7 @@ function CorporatePage({ setPage }) {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <FadeIn>
             <div style={{
-              background: "#F6F5F3", borderRadius: 20, padding: "48px",
+              background: "#ffffff", borderRadius: 20, padding: "48px",
             }}>
               <p style={{
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1.05rem",
@@ -1125,16 +1125,16 @@ function CorporatePage({ setPage }) {
       <section style={{ padding: "0 24px 80px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <FadeIn>
-            <SectionLabel>How we work with you</SectionLabel>
+            <SectionLabel color="#b04646">How we work with you</SectionLabel>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "1.6rem",
-              fontWeight: 500, color: "#2C2C2C", marginTop: 12, marginBottom: 56,
+              fontWeight: 500, color: "#b04646", marginTop: 12, marginBottom: 56,
             }}>Three levels of support</h2>
           </FadeIn>
 
           <div style={{
             display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: 24, alignItems: "start",
+            gap: 24, alignItems: "stretch",
           }}>
             {/* EDUCATE */}
             <FadeIn>
@@ -1145,11 +1145,11 @@ function CorporatePage({ setPage }) {
               }}>
                 <div style={{
                   width: 32, height: 3, borderRadius: 2, marginBottom: 20,
-                  background: "#3D9B8F",
+                  background: "#e58b7f",
                 }} />
                 <h3 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.3rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                  fontWeight: 500, color: "#b04646", marginBottom: 6,
                 }}>Educate</h3>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
@@ -1160,7 +1160,7 @@ function CorporatePage({ setPage }) {
                 }}>
                   {["Half-day or full-day kickstart workshop", "Lunch & learn sessions (single topic)", "Manager awareness briefing", "Online resource access for all participants"].map((t, i) => (
                     <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                      <span style={{ color: "#3D9B8F", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
+                      <span style={{ color: "#b04646", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
                       <span style={{
                         fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.86rem",
                         lineHeight: 1.5, color: "#4D5B5E",
@@ -1173,7 +1173,7 @@ function CorporatePage({ setPage }) {
                 }}>
                   <span style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.15rem",
-                    fontWeight: 500, color: "#2C2C2C",
+                    fontWeight: 500, color: "#b04646",
                   }}>From €2,500</span>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
@@ -1186,7 +1186,7 @@ function CorporatePage({ setPage }) {
             {/* EMPOWER */}
             <FadeIn delay={0.1}>
               <div style={{
-                background: "#E07B68", borderRadius: 20, padding: "36px 28px",
+                background: "#e58b7f", borderRadius: 20, padding: "36px 28px",
                 color: "#fff", height: "100%",
                 display: "flex", flexDirection: "column",
               }}>
@@ -1239,11 +1239,11 @@ function CorporatePage({ setPage }) {
               }}>
                 <div style={{
                   width: 32, height: 3, borderRadius: 2, marginBottom: 20,
-                  background: "#6B8F8A",
+                  background: "#e58b7f",
                 }} />
                 <h3 style={{
                   fontFamily: "'Mercado', serif", fontSize: "1.3rem",
-                  fontWeight: 500, color: "#2C2C2C", marginBottom: 6,
+                  fontWeight: 500, color: "#b04646", marginBottom: 6,
                 }}>Embed</h3>
                 <p style={{
                   fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.82rem",
@@ -1254,7 +1254,7 @@ function CorporatePage({ setPage }) {
                 }}>
                   {["Multiple cohorts per year", "Manager enablement sessions", "Internal champion training", "Quarterly impact reviews", "1:1 coaching & specialist add-ons"].map((t, i) => (
                     <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                      <span style={{ color: "#6B8F8A", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
+                      <span style={{ color: "#b04646", fontSize: "0.8rem", marginTop: 2 }}>✓</span>
                       <span style={{
                         fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.86rem",
                         lineHeight: 1.5, color: "#4D5B5E",
@@ -1267,7 +1267,7 @@ function CorporatePage({ setPage }) {
                 }}>
                   <span style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.15rem",
-                    fontWeight: 500, color: "#2C2C2C",
+                    fontWeight: 500, color: "#b04646",
                   }}>From €2,000/month</span>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.78rem",
@@ -1285,13 +1285,13 @@ function CorporatePage({ setPage }) {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <FadeIn>
             <div style={{
-              background: "#F2F0EE", borderRadius: 20, padding: "56px 48px",
+              background: "#f3ede2", borderRadius: 20, padding: "56px 48px",
               textAlign: "center",
             }}>
               {/* Header + KLM logo */}
               <p style={{
                 fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.75rem",
-                textTransform: "uppercase", letterSpacing: "0.1em", color: "#7ECBC1",
+                textTransform: "uppercase", letterSpacing: "0.1em", color: "#b04646",
                 marginBottom: 16,
               }}>Trusted by</p>
               <img
@@ -1320,7 +1320,7 @@ function CorporatePage({ setPage }) {
                   <div key={i} style={{ textAlign: "center", minWidth: 160 }}>
                     <p style={{
                       fontFamily: "'Mercado', serif", fontSize: "2rem",
-                      color: "#3D9B8F", marginBottom: 8,
+                      color: "#b04646", marginBottom: 8,
                     }}>{s.stat}</p>
                     <p style={{
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.8rem",
@@ -1357,7 +1357,7 @@ function CorporatePage({ setPage }) {
 
               <p style={{
                 fontFamily: "'Mercado', serif", fontSize: "1.2rem",
-                fontWeight: 500, color: "#2C2C2C", marginTop: 40,
+                fontWeight: 500, color: "#b04646", marginTop: 40,
               }}>
                 If that's you, let's talk.
               </p>
@@ -1393,7 +1393,7 @@ function AboutPage({ setPage }) {
             <SectionLabel>About</SectionLabel>
             <h1 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
-              fontWeight: 500, lineHeight: 1.2, color: "#2C2C2C",
+              fontWeight: 500, lineHeight: 1.2, color: "#2E5650",
               marginTop: 16, marginBottom: 24,
             }}>We started asking questions. We couldn't stop.</h1>
           </FadeIn>
@@ -1406,19 +1406,19 @@ function AboutPage({ setPage }) {
             </p>
             <p style={{
               fontFamily: "'Mercado', serif", fontSize: "1.2rem",
-              fontWeight: 500, color: "#E07B68",
+              fontWeight: 500, color: "#2E5650",
             }}>That's what we're here to change.</p>
           </FadeIn>
         </div>
       </section>
 
       {/* What drives us */}
-      <section style={{ padding: "60px 24px", background: "#F2F0EE" }}>
+      <section style={{ padding: "60px 24px", background: "#f3ede2" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <FadeIn>
             <h2 style={{
               fontFamily: "'Mercado', serif", fontSize: "1.5rem",
-              fontWeight: 500, color: "#2C2C2C", marginBottom: 20,
+              fontWeight: 500, color: "#2E5650", marginBottom: 20,
             }}>What drives us</h2>
             <p style={{
               fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
@@ -1428,7 +1428,7 @@ function AboutPage({ setPage }) {
             </p>
             <p style={{
               fontFamily: "'Mercado', serif", fontSize: "1.15rem",
-              color: "#E07B68", fontWeight: 500,
+              color: "#2E5650", fontWeight: 500,
             }}>
               We're not here to add years to your life. We're here to add life to your years.
             </p>
@@ -1462,12 +1462,12 @@ function AboutPage({ setPage }) {
             ].map((p, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <div style={{
-                  background: "#F6F5F3", borderRadius: 20, padding: "40px 32px",
-                  borderTop: "3px solid #E07B68",
+                  background: "#ffffff", borderRadius: 20, padding: "40px 32px",
+                  borderTop: "3px solid #85a49a",
                 }}>
                   <h3 style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.4rem",
-                    fontWeight: 500, color: "#2C2C2C", marginBottom: 16,
+                    fontWeight: 500, color: "#2E5650", marginBottom: 16,
                   }}>Hi, I'm {p.name}.</h3>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.92rem",
@@ -1544,7 +1544,7 @@ function ContactPage({ interest, setInterest }) {
             <SectionLabel>Contact</SectionLabel>
             <h1 style={{
               fontFamily: "'Mercado', serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)",
-              fontWeight: 500, color: "#2C2C2C", marginTop: 16, marginBottom: 20,
+              fontWeight: 500, color: "#2E5650", marginTop: 16, marginBottom: 20,
             }}>We'd love to hear from you.</h1>
             <p style={{
               fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "1rem",
@@ -1576,13 +1576,13 @@ function ContactPage({ interest, setInterest }) {
                   {item.href ? (
                     <a href={item.href} target="_blank" rel="noopener noreferrer" style={{
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
-                      color: "#2C2C2C", fontWeight: 500, textDecoration: "none",
+                      color: "#2E5650", fontWeight: 500, textDecoration: "none",
                       borderBottom: "1px solid rgba(0,0,0,0.1)",
                     }}>{item.value}</a>
                   ) : (
                     <span style={{
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.95rem",
-                      color: "#2C2C2C", fontWeight: 500,
+                      color: "#2E5650", fontWeight: 500,
                     }}>{item.value}</span>
                   )}
                 </div>
@@ -1591,18 +1591,18 @@ function ContactPage({ interest, setInterest }) {
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div style={{ background: "#F6F5F3", borderRadius: 20, padding: "40px 32px" }}>
+            <div style={{ background: "#ffffff", borderRadius: 20, padding: "40px 32px" }}>
               {sent ? (
                 <div style={{ textAlign: "center", padding: "24px 0" }}>
                   <div style={{
                     width: 56, height: 56, borderRadius: "50%",
-                    background: "rgba(61,155,143,0.1)", display: "flex",
+                    background: "rgba(46,86,80,0.1)", display: "flex",
                     alignItems: "center", justifyContent: "center",
-                    margin: "0 auto 20px", fontSize: "1.5rem", color: "#3D9B8F",
+                    margin: "0 auto 20px", fontSize: "1.5rem", color: "#2E5650",
                   }}>✓</div>
                   <h3 style={{
                     fontFamily: "'Mercado', serif", fontSize: "1.3rem",
-                    fontWeight: 500, color: "#2C2C2C", marginBottom: 8,
+                    fontWeight: 500, color: "#2E5650", marginBottom: 8,
                   }}>Thanks{name ? `, ${name}` : ""}!</h3>
                   <p style={{
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
@@ -1615,7 +1615,7 @@ function ContactPage({ interest, setInterest }) {
                   <button
                     onClick={() => { setSent(false); setName(""); setEmail(""); setMsg(""); setInterest(""); }}
                     style={{
-                      background: "none", border: "none", color: "#3D9B8F",
+                      background: "none", border: "none", color: "#2E5650",
                       fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.85rem",
                       fontWeight: 600, cursor: "pointer", marginTop: 20,
                     }}
@@ -1694,9 +1694,9 @@ export default function App() {
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #FDF7F2; overflow-x: hidden; }
-        ::selection { background: rgba(61,155,143,0.2); }
-        input:focus, textarea:focus { border-color: #3D9B8F !important; }
+        body { background: #faf8f4; overflow-x: hidden; }
+        ::selection { background: rgba(133,164,154,0.3); }
+        input:focus, textarea:focus { border-color: #85a49a !important; }
         button { font-family: inherit; }
         html { scroll-behavior: smooth; }
 
