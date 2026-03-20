@@ -298,7 +298,7 @@ function HomePage({ setPage }) {
 
         <div style={{ maxWidth: 800, textAlign: "center", position: "relative" }}>
           <FadeIn>
-            <SectionLabel><span style={{ color: "#b04646" }}>Evidence-based women's health</span></SectionLabel>
+            <SectionLabel color="#b04646">Evidence-based women's health</SectionLabel>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 style={{
@@ -545,7 +545,7 @@ function ForYouPage({ setPage }) {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <FadeIn>
             <div style={{
-              background: "linear-gradient(135deg, #2E5650 0%, #1f3d38 100%)",
+              background: "linear-gradient(135deg, #85a49a 0%, #6b8f84 100%)",
               borderRadius: 24, padding: "48px 40px", color: "#fff",
               position: "relative", overflow: "hidden",
             }}>
@@ -572,7 +572,7 @@ function ForYouPage({ setPage }) {
                 <button
                   onClick={() => setPage(PAGES.FOR_YOU)}
                   style={{
-                    background: "#fff", color: "#2E5650", border: "none",
+                    background: "#fff", color: "#85a49a", border: "none",
                     borderRadius: 100, padding: "14px 28px", cursor: "pointer",
                     fontFamily: "'Montserrat Alternates', sans-serif", fontSize: "0.9rem",
                     fontWeight: 600, transition: "transform 0.2s",
@@ -667,7 +667,7 @@ function ForYouPage({ setPage }) {
                     borderRadius: 100,
                   }}>Founding: €97 (first 10)</span>
                   <span style={{ flex: 1 }} />
-                  <Btn variant="rose" onClick={() => setPage(PAGES.CONTACT, "Your Body After 35 — 4-week programme")} style={{ padding: "12px 24px", fontSize: "0.85rem" }}>Sign up →</Btn>
+                  <Btn variant="primary" onClick={() => setPage(PAGES.CONTACT, "Your Body After 35 — 4-week programme")} style={{ padding: "12px 24px", fontSize: "0.85rem" }}>Sign up →</Btn>
                 </div>
               </div>
             </FadeIn>
